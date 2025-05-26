@@ -1,6 +1,6 @@
-echo "# Groq Pytector Project
+echo "# GroqSafe Project
 
-Groq Pytector is a Python package designed to help detect prompt injection attempts and flag unsafe content.  
+GroqSafe Project is a Python package designed to help detect prompt injection attempts and flag unsafe content.  
 It combines powerful local machine learning models (from the transformers library) with the Groq Llama Guard API to enhance content safety by categorizing risks into specific hazard codes.
 
 ⚠ **Note:** This is still a prototype and does not guarantee full protection against all prompt injection attacks.
