@@ -1,4 +1,4 @@
-echo "# Groq Pytector Project
+echo #Groq Pytector Project
 
 This is a Python tool designed for detecting prompt injection attacks and unsafe content.  
 It supports local model inference and integrates with Groq’s Llama Guard API for advanced content safety detection.
