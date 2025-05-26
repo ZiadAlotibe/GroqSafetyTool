@@ -1,18 +1,25 @@
-echo "# GroqSafe Project
+echo "# GroqSafetyTool
 
-GroqSafe Project is a Python package designed to help detect prompt injection attempts and flag unsafe content.  
-It combines powerful local machine learning models (from the transformers library) with the Groq Llama Guard API to enhance content safety by categorizing risks into specific hazard codes.
+GroqSafetyTool is an enhanced Python tool designed to detect prompt injection attempts and flag unsafe content.  
+This project integrates powerful local machine learning models (based on the transformers library) with Groq’s Llama Guard API to strengthen content safety by categorizing risks into specific hazard codes.
 
-⚠ **Note:** This is still a prototype and does not guarantee full protection against all prompt injection attacks.
+⚠ **Note:** This project is still evolving and does not guarantee complete protection against all prompt injection attacks.
+
+---
+
+## Important Notice
+
+This project is a modified/forked version of the original **Pytector** by Max Melchior Lang.  
+Significant modifications and extensions have been introduced to improve integration, usability, and customization, particularly in enterprise environments and AI governance contexts.
 
 ---
 
 ## Key Features
 
-- **Prompt Injection Detection:** Uses fine-tuned models like DeBERTa, DistilBERT, or ONNX to flag suspicious text.
-- **Groq Llama Guard Integration:** Connects with Groq’s API to identify risks like violence, hate speech, privacy issues, and more.
-- **Customizable Setup:** Choose between local or API detection, adjust thresholds, or plug in your own models.
-- **Hazard Categories (Groq):** Supports detection across codes like S1 (Violence), S5 (Defamation), S7 (Privacy), S10 (Hate), etc.
+- **Enhanced Prompt Injection Detection:** Optimized local models like DeBERTa, DistilBERT, and ONNX for stronger accuracy.
+- **Groq Llama Guard Integration:** Advanced API connection to detect sensitive risks such as violence, hate speech, or privacy breaches.
+- **Improved Customization:** Flexible switching between local and cloud-based detection, with tunable thresholds.
+- **Enterprise-Ready Extensions:** Adjusted for scalability, with better modularity and API handling for production settings.
 
 ---
 
@@ -20,18 +27,18 @@ It combines powerful local machine learning models (from the transformers librar
 
 Using pip:
 \`\`\`bash
-pip install pytector
+pip install .
 \`\`\`
 
 For GGUF local model support:
 \`\`\`bash
-pip install pytector[gguf]
+pip install .[gguf]
 \`\`\`
 
 Or install directly from source:
 \`\`\`bash
-git clone https://github.com/ZiadAlotibe/Groq_pytector_project.git
-cd Groq_pytector_project
+git clone https://github.com/ZiadAlotibe/GroqSafetyTool.git
+cd GroqSafetyTool
 pip install .
 \`\`\`
 
@@ -77,3 +84,10 @@ GGUF tests require installing \`llama-cpp-python\` and setting the \`PYTECTOR_TE
 
 ---
 
+## License
+
+This project is distributed under the MIT License, originally authored by Max Melchior Lang." > README.md
+
+git add README.md
+git commit -m "Rename project to GroqSafetyTool with updated README"
+git push -u origin main
